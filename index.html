@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Live 02</title>
+    <script src="js/crud.js" defer type="module"></script>
+</head>
+<body>
+    <header>
+        Sistema de Gerenciamento de Livros 
+    </header>
+
+    <div id="principal">
+        <h1>Cadastro de Livros</h1>
+        <form id="form">
+            <label for="title">Title</label> 
+            <input type="text" name="txt_title" id="title" required><br>
+
+            <label for="author">Author</label> 
+            <input type="text" name="txt_author" id="author" required><br>
+
+            <label for="image">Imagem</label> 
+            <input type="text" name="txt_image" id="image"><br>
+
+            <label for="price">Price</label> 
+            <input type="number" name="txt_price" id="price" required><br>
+
+            <button type="button" id="salvar">Salvar</button>
+        </form>
+    </div>
+
+    <div id="listLivros">
+        <h1> Listagem de Livros </h1>
+        <div class="linha">
+            <div class="titulo">Title</div>
+            <div class="titulo">Author</div>
+            <div class="titulo">Price</div>
+            <div class="titulo">Imagem</div>
+            <div class="titulo">Opções</div>
+        </div>
+        <div id="listDados">            
+        </div>
+    </div>
+
+    <footer>
+        <span>Desenvolvido por: Marcel Neves Teixeira </span>
+    </footer>
+</body>
+</html>
